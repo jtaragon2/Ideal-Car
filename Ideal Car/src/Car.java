@@ -10,6 +10,7 @@ public class Car
 		private String make;
 		private String model;
 		private int year;
+		
 		public Car(int w, int h, int wB, double tR, String c,double t, String m, String mo, int y)
 			{
 				weight =w;
