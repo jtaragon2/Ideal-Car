@@ -1,8 +1,9 @@
 
 public class Car
 	{
-		private		int weight;
+		private	int weight;
 		private int horsepower;
+		private int torque;
 		private int wheelbase;
 		private double turningRadius;
 		private String color;
@@ -12,14 +13,15 @@ public class Car
 		private int year;
 		private String nickname;
 		
-		public Car(int w, int h, int wB, double tR, String c,double t, String m, String mo, int y,String n)
+		public Car(int w, int h, int t, int wB, double tR, String c,double tS, String m, String mo, int y,String n)
 			{
 				weight =w;
 				horsepower=h;
+				torque = t;
 				wheelbase = wB;
 				turningRadius = tR;
 				color = c;
-				topSpeed = t;
+				topSpeed = tS;
 				make = m;
 				model = mo;
 				year = y;
@@ -40,6 +42,14 @@ public class Car
 		public void setHorsepower(int horsepower)
 			{
 				this.horsepower = horsepower;
+			}
+		public int getTorque()
+			{
+				return torque;
+			}
+		public void setTorque(int torque)
+			{
+				this.torque = torque;
 			}
 		public int getWheelbase()
 			{

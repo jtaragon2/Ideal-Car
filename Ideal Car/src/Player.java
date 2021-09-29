@@ -6,10 +6,11 @@ public class Player
 		private int balance;
 		private ArrayList <Car> carCollection = new ArrayList<Car>();
 		
-		public void Player(String n, int b)
+		public Player(String n, int b)
 			{
 				name = n;
 				balance = b;
+				
 			}
 
 		public String getName()
@@ -31,4 +32,13 @@ public class Player
 			{
 				this.balance = balance;
 			}
+
+		public Car getCarFromCollection(int i)
+			{
+				return carCollection.get(i);
+			}
+		public void addCarToCollection(Car c) {
+			carCollection.add(c);
+		}
+		
 	}
