@@ -12,8 +12,9 @@ public class Car
 		private String model;
 		private int year;
 		private String nickname;
+		private int miles;
 		
-		public Car(int w, int h, int t, int wB, double tR, String c,double tS, String m, String mo, int y,String n)
+		public Car(int w, int h, int t, int wB, double tR, String c,double tS, String m, String mo, int y,String n, int mi)
 			{
 				weight =w;
 				horsepower=h;
@@ -26,6 +27,7 @@ public class Car
 				model = mo;
 				year = y;
 				nickname =n;
+				miles = mi;
 			}
 		public int getWeight()
 			{
@@ -114,5 +116,13 @@ public class Car
 		public void setNickname(String nickname)
 			{
 				this.nickname = nickname;
+			}
+		public int getMiles()
+			{
+				return miles;
+			}
+		public void setMiles(int miles)
+			{
+				this.miles = miles;
 			}
 	}

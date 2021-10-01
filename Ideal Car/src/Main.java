@@ -14,10 +14,10 @@ public class Main
 				Employment.addition();
 
 			}
-
+// Car datatype order: int weight, int horsepower, int torque, int wheelbase, double turning radius, string color, double top speed, string make, string model, int year, string nickname, int miles
 		private static void ogListFiller()
 			{
-				CarList.add(new Car(0, 0, 0,0, 0, null, 0, null, null, 0, null));
+				CarList.add(new Car(0, 0, 0,0, 0, null, 0, null, null, 0, null,0));
 			}
 
 		private static void playerMaker()
@@ -25,6 +25,6 @@ public class Main
 				System.out.println("Enter your name below");
 				p.setName(stringGetter.nextLine());
 				p.setBalance(0);
-				p.addCarToCollection(new Car(3600, 170, 175, 103, 0, null, 0, null, null, 0, null));
+				p.addCarToCollection(new Car(3600, 170, 175, 103, 0, null, 0, null, null, 0, null,28755));
 			}
 	}
