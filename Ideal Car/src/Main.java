@@ -10,21 +10,25 @@ public class Main
 			{
 				ogListFiller();
 				playerMaker();
-				System.out.println("What's your name?");
+				
 				Employment.addition();
 
 			}
-// Car datatype order: int weight, int horsepower, int torque, int wheelbase, double turning radius, string color, double top speed, string make, string model, int year, string nickname, int miles
+// Car datatype order: int weight, int horsepower, int torque, int wheelbase, string color, double top speed,
+// string make, string model, int year, string nickname, int miles, int price
 		private static void ogListFiller()
 			{
-				CarList.add(new Car(0, 0, 0,0, 0, null, 0, null, null, 0, null,0));
+				CarList.add(new Car(3950, 183, 217,105,  "silver", 129.5, "Toyota", "4runner v6", 1998, "Old Man",280000,3400));
+				CarList.add(new Car(3529, 185, 0,0,  "maroon", 0, "Honda", "CR-V", 2014, "Steve",130967,15000));
 			}
 
 		private static void playerMaker()
 			{
 				System.out.println("Enter your name below");
 				p.setName(stringGetter.nextLine());
-				p.setBalance(0);
-				p.addCarToCollection(new Car(3600, 170, 175, 103, 0, null, 0, null, null, 0, null,28755));
+				p.addCarToCollection(new Car(3600, 170, 175, 103,  "white", 118.0, "Nissan", "rogue", 2017, "Tom",29027,0));
+				System.out.println("What do you want the nickname of your Nissan Rogue to be?");
+				p.getCarFromCollection(0).setNickname(stringGetter.nextLine());
+			
 			}
 	}

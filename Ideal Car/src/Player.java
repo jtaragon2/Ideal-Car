@@ -40,5 +40,8 @@ public class Player
 		public void addCarToCollection(Car c) {
 			carCollection.add(c);
 		}
+		public void addToB(int bastard) {
+			balance += bastard;
+		}
 		
 	}

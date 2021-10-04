@@ -5,7 +5,7 @@ public class Car
 		private int horsepower;
 		private int torque;
 		private int wheelbase;
-		private double turningRadius;
+		
 		private String color;
 		private double topSpeed;
 		private String make;
@@ -13,14 +13,14 @@ public class Car
 		private int year;
 		private String nickname;
 		private int miles;
+		private int price;
 		
-		public Car(int w, int h, int t, int wB, double tR, String c,double tS, String m, String mo, int y,String n, int mi)
+		public Car(int w, int h, int t, int wB,  String c,double tS, String m, String mo, int y,String n, int mi, int p)
 			{
 				weight =w;
 				horsepower=h;
 				torque = t;
 				wheelbase = wB;
-				turningRadius = tR;
 				color = c;
 				topSpeed = tS;
 				make = m;
@@ -28,6 +28,7 @@ public class Car
 				year = y;
 				nickname =n;
 				miles = mi;
+				price = p;
 			}
 		public int getWeight()
 			{
@@ -61,14 +62,8 @@ public class Car
 			{
 				this.wheelbase = wheelbase;
 			}
-		public double getTurningRadius()
-			{
-				return turningRadius;
-			}
-		public void setTurningRadius(double turningRadius)
-			{
-				this.turningRadius = turningRadius;
-			}
+		
+			
 		public String getColor()
 			{
 				return color;
@@ -124,5 +119,13 @@ public class Car
 		public void setMiles(int miles)
 			{
 				this.miles = miles;
+			}
+		public int getPrice()
+			{
+				return price;
+			}
+		public void setPrice(int price)
+			{
+				this.price = price;
 			}
 	}
