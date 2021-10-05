@@ -56,6 +56,8 @@ public class Employment
 					}
 				System.out.println("Your balance is: $"+ Main.p.getBalance());
 			}
-		
+		public static void subtraction() {
+			
+		}
 		
 	}
