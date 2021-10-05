@@ -5,7 +5,6 @@ public class Car
 		private int horsepower;
 		private int torque;
 		private int wheelbase;
-		
 		private String color;
 		private double topSpeed;
 		private String make;
