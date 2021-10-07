@@ -7,8 +7,10 @@ public class Main
 		public static ArrayList<Car> CarList = new ArrayList<Car>();
 		public static Player p = new Player(null, 0);
 		private static Scanner stringGetter = new Scanner(System.in);
+		private static Scanner intGetter = new Scanner(System.in);
 		private static boolean funTimes = true;
-		
+		private static int workC;
+		private static boolean atWork;
 		public static void main(String[] args)
 			{
 				ogListFiller();
@@ -86,9 +88,41 @@ public class Main
 			
 		private static void gamePlayer()
 			{
+				System.out.println("In this game, you can earn money to buy cars by completing mathmatecal operations");
 				do
 					{
-						Employment.addition();
+						home();
+						
 					} while (funTimes);
 			}
+			
+		private static void work()
+			{
+				do {
+				System.out.println(
+						"Would you like to do addition (1), subtraction (2), multiplication (3), division (4), or go home (5)?");
+				workC = intGetter.nextInt();
+				if (workC == 1)
+					{
+						Employment.addition();
+					}
+				else if (workC == 2)
+					{
+						Employment.subtraction();
+					}
+				else if (workC == 3)
+					{
+						Employment.multiplication();
+					}
+				else if (workC == 4)
+					{
+						Employment.division();
+					}else {
+						atWork=false;
+					}
+				}while(atWork);
+			}
+		private static void home() {
+		work();	
+		}
 	}
