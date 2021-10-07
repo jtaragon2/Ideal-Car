@@ -52,5 +52,7 @@ public class Player
 			{
 				balance -= lovechild;
 			}
-			
+			public ArrayList<Car> getCollection() {
+				return carCollection;
+			}
 	}

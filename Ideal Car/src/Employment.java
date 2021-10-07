@@ -105,7 +105,8 @@ public class Employment
 			System.out.println("Your balance is: $"+ Main.p.getBalance());
 		}
 		public static void multiplication() {
-			
+		System.out.println("What difficulty do you want? \nChoose from 1-5\nDifficulty 1 earns $100; Difficulty 5 earns $500");
+		diffChoice = intGetter.nextInt();
 		}
 		public static void division() {
 			
