@@ -10,7 +10,7 @@ public class Main
 		private static Scanner intGetter = new Scanner(System.in);
 		private static boolean funTimes = true;
 		private static int workC;
-		private static boolean atWork;
+		private static boolean atWork=true;
 		private static int homeC;
 		
 		public static void main(String[] args)
@@ -36,7 +36,7 @@ public class Main
 				CarList.add(new Car(5169, 360, 380, 135, "Silver", 92, "Ford", "F-150", 2012, "The Gas Guzzler", 223000,
 						8000));
 				CarList.add(
-						new Car(4120, 215, 222, 119, "White", 116, "Toyota", "Sienna", 2006, "Papa Car", 250000, 2));
+						new Car(4120, 215, 222, 119, "White", 116, "Toyota", "Sienna", 2006, "Papa Car", 250000, 4500));
 				CarList.add(new Car(4927, 329, 325, 117, "Gray", 145, "Audi", "Q7", 2019, "Da Beast", 15000, 54500));
 				System.out.println("These are the available cars: \n");
 				
@@ -164,6 +164,7 @@ public class Main
 							}
 						else
 							{
+								atWork=true;
 								work();
 							}
 							

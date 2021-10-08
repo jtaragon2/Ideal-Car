@@ -210,6 +210,7 @@ public class Employment
 								System.out.println("You were wrong.\nNo money for you");
 							}
 					}
+				System.out.println("Your balance is: $" + Main.p.getBalance());
 			}
 			
 		public static void division()
@@ -262,5 +263,6 @@ public class Employment
 								System.out.println("You were wrong.\nNo money for you");
 							}
 					}
+				System.out.println("Your balance is: $" + Main.p.getBalance());
 			}
 	}
