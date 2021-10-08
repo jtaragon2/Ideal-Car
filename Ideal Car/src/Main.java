@@ -160,7 +160,7 @@ public class Main
 						else if (homeC == 4)
 							{
 								System.out.println("Which car do you want to buy?");
-								carBuyer(intGetter.nextInt());
+								carBuyer(intGetter.nextInt()-1);
 							}
 						else
 							{
