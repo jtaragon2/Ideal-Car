@@ -82,7 +82,8 @@ public class Main
 			{
 				
 				if (p.getBalance() >= CarList.get(bc).getPrice())
-					{
+					{	
+						CarList.get(bc).setPrice(0);
 						p.subFromB(CarList.get(bc).getPrice());
 						p.addCarToCollection(CarList.get(bc));
 						CarList.remove(bc);
@@ -96,7 +97,6 @@ public class Main
 		private static void gamePlayer()
 			{
 				System.out.println("In this game, you can earn money to buy cars by completing mathmatical operations");
-				
 				home();
 				
 			}
