@@ -66,7 +66,15 @@ public class Main
 					}
 					
 			}
-			
+			public static void breaker(int sizeOfBreak) {
+				if (sizeOfBreak==0) {
+					
+				}else if (sizeOfBreak==1) {
+					
+				} else if (sizeOfBreak==2) {
+					
+				}
+			}
 		private static void playerMaker()
 			{
 				System.out.println("Enter your name below");
